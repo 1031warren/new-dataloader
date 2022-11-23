@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+
+<!-- 
+
+    UATSpace page for CSC102 at UAT.edu  
+
+    by Adam Warren  
+
+    adamwarre@uat.edu  
+
+    Assignment: Launching your UAT Space Program HTML Document Tags  
+
+    12Sep2022  
+
+    Webpage with html and CSS  
+
+--> 
+
+<!--html tag for assignment--> 
+<html> 
+<!--head tag for assignment--> 
+<head> 
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+    <script src="code.js"></script> 
+    <script src="phun.js"></script>
+    <script src="launchDataDis.js"></script>
+    <script src="dataLoader.js"></script>
+    <!--the title goes at the title bar--> 
+
+<title> 
+ Adam Warren's UATSpace page 
+</title> 
+
+    <script> 
+    var theTime = new Date(); 
+    var time_interval = 5000;
+    var running = true; 
+    var index = 0;
+    var timer;
+    var data = getData(); 
+    </script> 
+
+</head> 
+
+
+ 
+ 
+
+<body> 
+
+    <table> 
+        <!--logo for UATSpace--> 
+        <td><img src="UATspaceLogo-1.jpg"></td> 
+        <!--UATSpace program next to it--> 
+        <td> 
+        <h1>UAT Space Program</h1> 
+        </td> 
+
+    </table> 
+    <br> 
+    <br> 
+    <table> 
+     <td>test</td> 
+    </table> 
+         
+    <table border="2" width="70%" id="dataTable"> 
+   
+        <col style="width: 35%;"> 
+        <col style="width: 35%;"> 
+
+        <thead> 
+            <th>Data Type</th>
+            <th>Reading</th>
+        <tbody>
+        <tr id="seconds"></tr> 
+        <tr id="latitude"></tr> 
+        <tr id="longitude"></tr> 
+        <tr id="gps_altitude"></tr> 
+        <tr id="bmp_altitude"></tr> 
+        <tr id="bmp_pressure"></tr> 
+        <tr id="bmp_temperature"></tr> 
+        <tr id="dig_temperature"></tr> 
+        <tr id="css_temperature"></tr> 
+        <tr id="css_eC02"></tr> 
+        <tr id="css_TVOC"></tr> 
+        <tr id="UV"></tr> 
+        <tr id="accelX"></tr> 
+        <tr id="accelY"></tr> 
+        <tr id="accelZ"></tr>    
+        <tr id="magneticX"></tr> 
+        <tr id="magneticY"></tr> 
+        <tr id="magneticZ"></tr> 
+        <tr id="gyroX"></tr> 
+        <tr id="gyroY"></tr> 
+        <tr id="gyroZ"></tr> 
+    </tbody>
+    </table> 
+    <br>
+    The current time is: <div id="clockTime">Press start to display current time</div>
+    <br> 
+    <br>  
+    <!--button requirements from assignment--> 
+    <button onclick="startFun()" id="startButton">Start</button> 
+    <button onclick="stopFun()" id="stopButton">Stop</button> 
+    <br> 
+    <br> 
+    <!--Place to play craps--> 
+    <h1>Craps Game</h1> 
+    <div id="die1Res">The die one 1 result will go here</div><br> 
+    <div id="die2Res">The die one 2 result will go here</div><br> 
+    <div id="gameRes">The game results will go here</div><br> 
+    <buttton onclick="playCraps()">Play Craps </buttton> 
+    <br>  
+    <br> 
+    <!--Input sound--> 
+    <h1>Play a sound</h1> 
+    <button class="buttonlg" onclick="Playstation();">Play Station Sounds</button>
+
+ 
+ 
+
+    <h1>Sandbox</h1> 
+    <h2>making arrays</h2> 
+    <button class="button" onclick="arrayTest1();">Array Test 1</button> 
+    <br> 
+    <br> 
+    <button onclick="stackPhun();" class="button">Array Test 2</button> 
+
+</body> 
+
+</html> 
+
+ 
